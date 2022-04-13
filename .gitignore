@@ -21,6 +21,22 @@ lib/
 .vscode/
 .DS_Store
 
+# dependencies
+node_modules
+flow-typed
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.idea
+.DS_Store
+.env
+npm-debug.log
+firebase-debug.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
