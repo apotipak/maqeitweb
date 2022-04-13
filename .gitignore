@@ -6,6 +6,7 @@ maintenance_mode_state.txt
 web.config
 backend/backend/__pycache__/
 backend/__pycache__/
+static/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
