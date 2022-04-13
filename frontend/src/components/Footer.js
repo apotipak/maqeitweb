@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <h4>Created By You</h4>
+      <h4>todo</h4>
     </div>
   );
 };
