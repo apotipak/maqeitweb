@@ -8,6 +8,20 @@ backend/backend/__pycache__/
 backend/__pycache__/
 static/
 
+
+# binaries
+bin/
+dist/
+lib/
+
+# editors
+*.swp
+.idea/
+.vs/
+.vscode/
+.DS_Store
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
