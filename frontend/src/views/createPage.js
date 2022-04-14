@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   padding: 1em 0em 6em 2em;
 `;
 
-function ProtectedPage() {
+function CreatePage() {
   const [res, setRes] = useState("");
   const api = useAxios();
 
@@ -33,7 +33,7 @@ function ProtectedPage() {
       
       <Wrapper>
         <div className="grid-item">
-          <p>Protected Page</p>
+          <p>Create</p>
         </div>
 
       </Wrapper>
@@ -44,4 +44,4 @@ function ProtectedPage() {
   );
 }
 
-export default ProtectedPage;
+export default CreatePage;

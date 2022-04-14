@@ -1,29 +1,30 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
+import styled from 'styled-components';
+
 
 const Navbar = () => {
   const { user, logoutUser } = useContext(AuthContext);
   return (
-    <nav>
-      <div>
-        <h1>MAQEIT</h1>
-        <div>
-          {user ? (
-            <>
-              <Link to="/">Home</Link>
-              <Link to="/protected">Protected Page</Link>
-              <button onClick={logoutUser}>Logout</button>
-            </>
-          ) : (
-            <>
-              <Link to="/login">Login</Link>
-              <Link to="/register">Register</Link>
-            </>
-          )}
-        </div>
-      </div>
-    </nav>
+    <div className="topnav">
+      <nav>          
+        <Link to="/">MAQEIT</Link>
+        {user ? (
+          <>            
+            <Link onClick={logoutUser} style={{float:'right'}}>Logout</Link>
+            {/*<Link to="/protected" style={{float:'right'}}>Protected Page</Link>*/}
+            <Link to="/create" style={{float:'right'}}>Create</Link>
+          </>
+        ) : (
+          <>                
+            {/*<Link className="registermenu" to="/register">Register</Link>*/}                
+            <Link to="/todo" style={{float:'right'}}>Connect Wallet</Link>
+            <Link to="/login" style={{float:'right'}}>Login</Link>            
+          </>
+        )}
+      </nav>
+    </div>
   );
 };
 
