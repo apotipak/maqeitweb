@@ -33,7 +33,7 @@ function ProtectedPage() {
       
       <Wrapper>
         <div className="grid-item">
-          <p>Protected Page</p>
+          <h2>Protected Page</h2>
         </div>
 
       </Wrapper>

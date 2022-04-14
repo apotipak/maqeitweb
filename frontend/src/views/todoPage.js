@@ -18,10 +18,9 @@ const TodoPage = () => {
       <Navbar />
       
       <Wrapper>
-        <div className="grid-item">
-          <p>TODO</p>
+        <div>
+          <h2>TODO</h2>
         </div>
-
       </Wrapper>
 
       <Footer />

@@ -1,8 +1,17 @@
+import { Link } from "react-router-dom";
+
+
 function UserInfo({ user }) {
+
+  const mystyle = {
+    color: "orange",
+    fontFamily: "Arial",
+    float:"right",
+    cursor: "auto"
+  };
+
   return (
-    <div>
-      <h1>Hello, {user.username}</h1>
-    </div>
+    <Link style={mystyle}>Hi, {user.username}</Link>
   );
 }
 

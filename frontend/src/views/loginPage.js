@@ -26,7 +26,7 @@ const LoginPage = () => {
         <Wrapper>
           <div className="grid-item">
             <form onSubmit={handleSubmit}>
-              <h1>Login </h1>        
+              <h2>Login </h2>
               <label htmlFor="username">Username</label>
               <input type="text" id="username" placeholder="Enter Username" />
               <label htmlFor="password">Password</label>

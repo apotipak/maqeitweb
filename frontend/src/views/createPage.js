@@ -32,8 +32,8 @@ function CreatePage() {
       <Navbar />
       
       <Wrapper>
-        <div className="grid-item">
-          <p>Create</p>
+        <div>
+          <h2>Create</h2>
         </div>
 
       </Wrapper>

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
+import UserInfo from "../components/UserInfo";
 import styled from 'styled-components';
 
 
@@ -14,7 +15,8 @@ const Navbar = () => {
           <>            
             <Link onClick={logoutUser} style={{float:'right'}}>Logout</Link>
             {/*<Link to="/protected" style={{float:'right'}}>Protected Page</Link>*/}
-            <Link to="/create" style={{float:'right'}}>Create</Link>
+            <UserInfo user={user} />
+            <Link to="/create" style={{float:'left'}}>Create</Link>
           </>
         ) : (
           <>                
