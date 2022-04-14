@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 
 const Wrapper = styled.section`
-  padding: 1em 0em 6em 2em;
+  padding: 1em 0em 15em 2em;
 `;
 
 const Home = () => {
@@ -23,8 +23,7 @@ const Home = () => {
 
       <Wrapper>
         <div>
-          <h2>Welcome</h2>
-          <p>You are on home page!</p>        
+          <h2>Discover extraordinary NFTs</h2>
         </div>
       </Wrapper>
 
