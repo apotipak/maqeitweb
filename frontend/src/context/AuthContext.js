@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   const history = useHistory();
 
   const loginUser = async (username, password) => {
-    const response = await fetch("https://maqeitweb.com/api/token/", {
+    const response = await fetch("https://maqeit.com/api/token/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   };
   
   const registerUser = async (username, password, password2) => {
-    const response = await fetch("https://maqeitweb.com/api/register/", {
+    const response = await fetch("https://maqeit.com/api/register/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
